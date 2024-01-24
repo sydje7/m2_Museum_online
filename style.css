@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +7,7 @@
   scroll-behavior: smooth;
 }
  
-.navbar {
+.navbar{
   background: rgb(0, 0, 0)
   height: 80px;
   display: flex;
@@ -191,8 +192,20 @@
 }
  
 /* Hero Section */
+.hero__logo {
+  width: 110px;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  z-index: 999;
+  font-size: 500px;
+}
+ 
+ 
+ 
 .hero {
-  background: url('/images/nxt\ background.png') center/cover no-repeat; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background: url('img/nxt\ achtergrond.png') center/cover no-repeat;
   padding: 200px 0;
 }
 .hero__container {
@@ -208,9 +221,9 @@
 }
  
 .hero__heading {
-  font-size: 120px;
+  font-size: 180px;
   margin-bottom: 24px;
-  color: #fff;
+  color: #ffffff;
   font-style: italic;
 }
  
@@ -265,9 +278,7 @@
   .hero__description {
     font-size: 40px;
   }
-} maak de achtergront een foto
- 
- 
+}
  
 /* About Section */
 .main {
@@ -389,7 +400,7 @@
   flex-direction: column;
   justify-content: center;
   color: #ff0000;
-  background-image:url('/images/download.png');
+  background-image: url('img//nxt\ logo.jpg');
   background-size:
   background-repeat: no-repeat;
   background-position: center;
@@ -622,4 +633,16 @@ body {
     width: 100%;
   }
 }  
-heeft contextmenu
+photo-card {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+ 
+.photo-card img {
+  transition: transform 0.3s ease;
+}
+ 
+.photo-card:hover img {
+  transform: scale(1.2);
+}
